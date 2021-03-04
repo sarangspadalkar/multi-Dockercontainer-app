@@ -1,6 +1,6 @@
-docker build -t sarangpadalkar/multi-client:latest -t sarangpadalkar/multi-client:$SHA ./client/Dockerfile ./client
-docker build -t sarangpadalkar/multi-server:latest -t sarangpadalkar/multi-server:$SHA ./server/Dockerfile ./server
-docker build -t sarangpadalkar/multi-worker:latest -t sarangpadalkar/multi-worker:$SHA ./worker/Dockerfile ./worker
+docker build -t sarangpadalkar/multi-client:latest -t sarangpadalkar/multi-client:$SHA ./client
+docker build -t sarangpadalkar/multi-server:latest -t sarangpadalkar/multi-server:$SHA ./server
+docker build -t sarangpadalkar/multi-worker:latest -t sarangpadalkar/multi-worker:$SHA ./worker
 
 docker push sarangpadalkar/multi-client:latest
 docker push sarangpadalkar/multi-server:latest
